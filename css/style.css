@@ -1,0 +1,201 @@
+/* roboto font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Main style */
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+}
+a {
+    text-decoration: none;
+}
+/*utility class */
+
+.container {
+    max-width: 80%;
+    margin: auto;
+}
+.bg-dark {
+    background-color: #1f3041;
+    color: #fff;
+    opacity: 0.8;
+}
+.bg-light {
+    background-color: rgb(243, 235, 214);
+    color: black;
+}
+.bg-primary{
+    background-color: #1f3041;
+    color: #fff;
+}
+.text-primary {
+    color: #a4161a;
+}
+.text-center {
+    text-align: center;
+}
+.l-heading {
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding: 1.5rem 0;
+}
+.btn {
+    background-color: #1f3041;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+}
+.btn-dark {
+    background-color: #227988;
+    color: #fff;
+}
+.btn:hover{
+    background-color: #a4161a;
+}
+.box-shadow {
+    box-shadow: 0 0 2px black;
+}
+.m-heading {
+    padding: 1.5rem 0;
+    font-size: 3rem;
+}
+.title {
+    font-size: 1.5rem;
+    color: black;
+    padding-bottom: 0.5rem;
+}
+.p-1 {
+    padding: 1.5rem;
+}
+/*Navbar */
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+#navbar .logo img {
+    width: 80px;
+}
+#navbar ul {
+    list-style: none;
+    display: flex;
+}
+#navbar ul li a {
+    color: white;
+    padding: 1rem;
+}
+#navbar ul li a:hover {
+    background-color: #227988;
+    border-radius: 5px;
+}
+/*section showcase*/
+#showcase {
+    background: gray url(../img/earth.jpg) no-repeat center
+    center/cover;
+    height: 100vh;
+    color: #fff;
+}
+#showcase .showcase-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 1rem;
+    background-color: rgba(0,0,0,0.8);
+}
+/* About */
+#about .about-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1.5rem;
+}
+#about .about-content div,
+#about .about-content img {
+    flex: 1;
+}
+#about .about-content img {
+    width: 50%;
+    margin-left: 1.5rem;
+    border: 5px solid rgba(49, 47, 47, 0.979);
+}
+/* section threats */
+#threats {background: gray url(../img/sun.jpg) no-repeat center
+    center/cover;
+    height: 100vh;
+    color: #fff;
+}
+#threats .boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#threats .boxes .box {
+    flex: 1;
+    padding: 5rem;
+}
+#threats .boxes .box img {
+    width: 200px;
+    padding: 0.5rem;
+    border-radius: 10%;
+}
+/* section solutions */
+#Solutions .solutions-boxes {
+    display: flex;
+} 
+
+#Solutions .solutions-boxes .solution-box {
+    flex: 1;
+    border-radius: 5px;
+    margin: 1rem;    
+}
+#Solutions .solutions-boxes .solution-box img {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px; 
+}
+#Solutions .solutions-boxes .solution-box ul {
+    display: flex;
+    list-style: none;
+}
+#Solutions .solutions-boxes .solution-box ul li a {
+    color: rgb(24, 32, 32);
+    margin-right: 10px;
+}
+#Solutions .solutions-boxes .solution-box ul li a:hover {
+    color: #a4161a;
+}
+/* Section: Contact */
+#contact {
+    display: flex;
+}
+#contact .contact-us {
+    flex: 1;
+}
+#contact .contact-us input,
+#contact .contact-us textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    margin-bottom: 1rem;
+    outline: none;
+}
+
+#contact .contact-us .form-group {
+    display: flex;
+}
+#contact .contact-us .form-group input[type="text"] {
+    margin-right: 0.75rem;
+}
